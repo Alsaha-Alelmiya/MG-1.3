@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=0.65"/>
-<link rel="icon" href="https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/project-icon.svg">
-<link rel="stylesheet" href="https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/loader-img.css">
+<link rel="icon" href="images/project-icon.svg">
+<link rel="stylesheet" href="https://alsaha-alelmiya.github.io/MG-1.3/hosting/loader-img.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -201,7 +201,7 @@ text-shadow:1px 1px 3px #f7f7f7, 1px 1px 3px #f7f7f7;
 .header{
 width:100%;
 height:140px;
-background-image:url("https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/sun-tornado2.svg");
+background-image:url("images/sun-tornado2.svg");
 background-attachment:fixed;
 border-bottom-left-radius:15%;
 border-bottom-right-radius:15%;
@@ -274,7 +274,7 @@ text-align:center;
 /*footer:*/
 .footer{
 width:100%;
-background-image:url("https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/tornado-sun2.svg");
+background-image:url("images/tornado-sun2.svg");
 Background-attachment:fixed;
 position:absolute;
 min-height:10%;
@@ -315,13 +315,13 @@ to{transform:rotate(-90deg); opacity:0;}
 </head>
 <body>
 <div class="loader-div" id="loader-div">
-<img src="https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/project-icon.svg" alt="" class="loader-logo" align="center">
+<img src="images/project-icon.svg" alt="" class="loader-logo" align="center">
 <br><br>
 <span class="loader-img"></span>
 </div>
 <div class="content" id="content">
 <div class="header">
-<img src="https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/الساحة العلمية.png" alt="" class="h-logo" align="left">
+<img src="images/الساحة-العلمية.png" alt="" class="h-logo" align="left">
 <p class="index">
 مفردات وتعبيرات الوحدة الثانية (أتساءل عما حدث)
 <br>
@@ -330,14 +330,14 @@ Unit2 (I Wonder What Happened) Vocabularies And Expressions
 </span>
 </p>
 <button onclick="openMenu()" class="m-button">
-<img class="m-img" id="m-img" src="https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/menu2.svg" alt="Menu">
+<img class="m-img" id="m-img" src="images/menu2.svg" alt="Menu">
 </button>
 </div>
 
 <div class="menu-box" id="menu-box">
 <a href="javascript:void(0)" class="c-link" onclick="closeMenu()" class="m-link">
 <button class="c-button">
-<img src="https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/cross2.svg" alt="Close" class="c-img" id="c-img">
+<img src="images/cross2.svg" alt="Close" class="c-img" id="c-img">
 </button>
 </a>
 <br><br><br><br><br><br>
@@ -690,30 +690,30 @@ You never know
 </p>
 </footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="scripts/jquery.js"></script>
 <script>
 let speakers = document.querySelectorAll('.speaker');
-let src4speakers = 'https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/speaker2.svg'
+let src4speakers = 'images/speaker2.svg'
 
 for (let i = 0; i < speakers.length; i++) {
   speakers[i].src = src4speakers;
 }
 
 let dictionaries = document.querySelectorAll('.dictionary');
-let src4dictionaries = 'https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/dictionary2.svg'
+let src4dictionaries = 'images/dictionary2.svg'
 
 for (let i = 0; i < dictionaries.length; i++) {
   dictionaries[i].src = src4dictionaries;
 }
 
 let impos = document.querySelectorAll('.impo');
-let src4impos = 'https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/important2.svg'
+let src4impos = 'images/important2.svg'
 
 for (let i = 0; i < impos.length; i++) {
   impos[i].src = src4impos;
 }
 </script>
-<script src="voices2.js"></script>
+<script src="scripts/voices2.js"></script>
 <script>
 var timeout = setTimeout(function() {
 document.getElementById("loader-div").style.display ="none";
@@ -741,6 +741,6 @@ document.getElementById("menu-box").style.width = "0";
 document.getElementById("m-img").style.display ="block";
 }
 </script>
-<script src="https://alsaha-alelmiya.github.io/MG-1.3-HOSTING/dic-sup.js"></script>
+<script src="scripts/dic-sup.js"></script>
 </body>
 </html>
