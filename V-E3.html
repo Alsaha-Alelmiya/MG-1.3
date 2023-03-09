@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar/en" style="scroll-behavior:smooth;">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=0.65"/>
+<link rel="icon" href="images/project-icon.svg">
+<link rel="stylesheet" href="https://alsaha-alelmiya.github.io/MG-1.3/hosting/loader-img.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=IBM+Plex+Sans+Arabic:wght@500&family=Katibeh&family=Markazi+Text&family=Reem+Kufi&display=swap" rel="stylesheet">
+<title>مفردات وتعبيرات الوحدة الثالثة</title> 
+<style>
+
+/*font families:*/
+@font-face{
+font-family:'saha';
+src:url("fonts/alsaha-alelmiya.woff2") format("woff2");
+}
+
+@font-face{
+font-family:'science';
+src:url("fonts/science-icons.woff2") format("woff2");
+}
+
+/*font-family: 'Amiri', serif;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-family: 'Katibeh', cursive;
+font-family: 'Markazi Text', serif;
+font-family: 'Reem Kufi', sans-serif;*/
+
+*{
+text-align:center;
+margin:0;
+padding:0;
+}
+
+body{
+min-height:100vh;
+margin:0;
+position:relative;
+}
+
+body::after{
+content:'';
+display:block;
+min-height: 9%;
+}
+
+::selection{
+background-color:rgba(80,80,80,0.5);
+color:white;
+text-shadow:1px 1px 3px black;
+}
+
+/*th:*/
+.m-titles{
+background-color:rgb(134, 86, 66);
+color:#f7f7f7;
+font-family:ibm plex sans arabic;
+font-weight:500;
+border-top:5px solid white;
+}
+
+/*td:*/
+.s-titles{
+background-color:#A47460;
+color:#f7f7f7;
+font-family:markazi text;
+font-size:18px;
+border-top:5px solid white;
+}
+
+.ar-st{
+border-right:5px solid white;
+}
+
+.en-st{
+border-left:5px solid white;
+}
+
+.items{
+font-family:Katibeh;
+background-color:#f7f7f7;
+color:#A47460;
+}
+
+.ar-i{
+border-right:5px solid white;
+}
+
+.en-i{
+border-left:5px solid white;
+}
+
+/*mix:*/
+
+table, th, td{
+border-collapse:collapse;
+padding:10px;
+}
+
+img, footer, br{
+user-select:none;
+}
+
+/*table:*/
+table{
+margin:auto;
+border:9px double white;
+width:100%;
+}
+
+/*button:*/
+.speaker-btn, .dic-btn{
+border-radius:50%;
+border:none;
+background-color:transparent;
+padding:1px 2px 5px 10px;
+}
+
+/*div:*/
+.dic-m{
+direction:ltr;
+background-color:#A47460;
+color:#f7f7f7;
+border-radius:10px 10px 10px 2px;
+padding:10px 5px 5px 5px;
+margin-bottom:4px;
+display:none;
+opacity:0.9;
+}
+
+.content{
+display:none;
+}
+
+/*loader:*/
+.loader-div{
+display:;
+background-color:white;
+width:100%;
+height:50%;
+margin:75% auto;
+text-align:center;
+}
+
+.loader-logo{
+width:250px;
+}
+
+/*img:*/
+img{
+pointer-events:none;
+user-select:none;
+}
+
+.speaker{
+width:18px;
+position:relative;
+top:6px;
+right:5px;
+}
+
+.dictionary{
+padding:1px;
+width:14px;
+position:relative;
+top:3.5px;
+}
+
+.impo{
+width:15px;
+}
+
+/*links:*/
+.bus{
+-webkit-tap-highlight-color:transparent;
+text-decoration:underline;
+color:#A47460;
+}
+
+.bus:hover{
+text-decoration:none;
+color:#A47460;
+}
+
+/*p:*/
+.index{
+font-family:reem kufi;
+font-size:18px;
+text-align:center;
+z-index:1;
+color:#A47460;
+padding-top:40px;
+text-shadow:1px 1px 3px #f7f7f7, 1px 1px 3px #f7f7f7;
+}
+
+/*header:*/
+.header{
+width:100%;
+height:140px;
+background-image:url("images/sun-tornado3.svg");
+background-attachment:fixed;
+border-bottom-left-radius:15%;
+border-bottom-right-radius:15%;
+}
+
+.h-logo{
+width:140px;
+height:140px;
+}
+
+.m-img, .c-img{
+width:55px;
+animation:;
+z-index:1;
+border-radius:;
+position:absolute;
+top:0;
+right:0;
+}
+
+.m-button, .c-button{
+background-color:transparent;
+border-color:transparent;
+position:absolute;
+right:0;
+top:0;
+width:55px;
+height:55px;
+}
+
+.menu-box{
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-image:linear-gradient(124deg, #A47460, #f7f7f7, #f7f7f7);
+Background-attachment:fixed;
+overflow-x: hidden;
+transition: 0.8s;
+padding-top: 0px;
+box-shadow:-2px 4px 12px black;
+text-align:center;
+font-size:8px;
+opacity:0.9;
+}
+
+.m-link{
+display:grid;
+margin:auto;
+grid-template-columns:1fr;
+margin-top:100px;
+font-size:20px;
+font-family:reem kufi;
+background-color:transparent;
+border:none;
+text-decoration:underline;
+color:#A47460;
+text-shadow:1px 1px 5px #f7f7f7;
+}
+
+.menu-box, .c-link{
+position:absolute;
+top:0px;
+right:0px;
+text-align:center;
+}
+
+/*footer:*/
+.footer{
+width:100%;
+background-image:url("images/tornado-sun3.svg");
+Background-attachment:fixed;
+position:absolute;
+min-height:9%;
+bottom:0;
+z-index:-1;
+border-top-left-radius:15%;
+border-top-right-radius:15%;
+}
+
+.d-footer{
+font-size:24px;
+font-family:saha;
+margin-top:25px;
+line-height:50px;
+color:#f7f7f7;
+text-shadow:1px 1px 3px #A47460, 1px 1px 3px #A47460;
+}
+
+.d-s{
+font-family:science;
+font-size:40px;
+transform:;
+display:inline-block;
+position:relative;
+top:5px;
+padding:0 3px 0 0;
+}
+
+/*animations:*/
+@keyframes m-img{
+from{transform:rotate(0deg); opacity:1;}
+to{transform:rotate(-90deg); opacity:0;}
+}
+
+@keyframes c-img{
+from{transform:rotate(0deg); opacity:1;}
+to{transform:rotate(-90deg); opacity:0;}
+}
+</style>
+</head>
+<body>
+<div class="loader-div" id="loader-div">
+<img src="images/project-icon.svg" alt="" class="loader-logo" align="center">
+<span class="loader-logo"></span>
+<br><br>
+<span class="loader-img"></span>
+</div>
+<div class="content" id="content">
+<div class="header">
+<img src="images/الساحة-العلمية.png" alt="" class="h-logo" align="left">
+<p class="index">
+مفردات وتعبيرات الوحدة الثالثة (إذا لم يحدث)
+<br>
+<span dir="ltr">
+Unit3 (If It Hadn't Happened) Vocabularies And Expressions
+</span>
+</p>
+<button onclick="openMenu()" class="m-button">
+<img class="m-img" id="m-img" src="images/menu3.svg" alt="Menu">
+</button>
+</div>
+
+<div class="menu-box" id="menu-box">
+<a href="javascript:void(0)" class="c-link" onclick="closeMenu()" class="m-link">
+<button class="c-button">
+<img src="images/cross3.svg" alt="Close" class="c-img" id="c-img">
+</button>
+</a>
+<br><br><br><br><br><br>
+<button class="m-link" onclick="document.location.href='V-E.html'">الرئيسية</button>
+<button class="m-link" onclick="document.location.href='V-E1.html'">مفردات وتعبيرات الوحدة الأولى</button>
+<button class="m-link" onclick="document.location.href='V-E2.html'">مفردات وتعبيرات الوحدة الثانية</button>
+<button class="m-link" onclick="document.location.href='V-E4.html'">مفردات وتعبيرات الوحدة الرابعة</button>
+</div>
+<br><br>
+<table class="container">
+<tr>
+<th colspan="4" class="m-titles">
+المفردات [Vocabularies]
+</th>
+</tr>
+
+<tr>
+<td class="s-titles ar-st">
+أسماء
+</td>
+<td class="s-titles en-st">
+Nouns
+</td>
+<td class="s-titles ar-st">
+أفعال
+</td>
+<td class="s-titles en-st">
+Verbs
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Advantage
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Drill
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Antibiotic
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Guess
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Candle
+</td>
+<td class="s-titles ar-st">
+عبارات فعلية للتعبير عن الأسف
+</td>
+<td class="s-titles en-st">
+Verb phrases to express regret
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Course
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="vpter1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Could have
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Disadvantage
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="vpter2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Might have
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Distance
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="vpter3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Should have
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Infection
+</td>
+<td class="s-titles ar-st">
+صفات
+</td>
+<td class="s-titles en-st">
+Adjectives
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n8.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Load
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Commercial
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n9.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Oil well
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Devastated
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n10.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Penicillin
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Embarrassed
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n11.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Regret
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Heavy
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n12.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Source
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Immature
+</td>
+</tr>
+
+<tr>
+<th colspan="2" class="m-titles">
+التعبيرات [Expressions]
+</th>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Incandescent
+</td>
+</tr>
+
+<tr>
+<td class="s-titles ar-st">
+مصطلحات
+</td>
+<td class="s-titles en-st">
+Idioms
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Widespread
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="idi1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Be on good terms
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="idi2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Fall out with someone
+</td>
+<td colspan="2"></td>
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="idi3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Miss an opportunity
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="s-titles ar-st">
+<img src="###" alt="" class="impo">
+حديث جاد
+</td>
+<td class="s-titles en-st">
+Real talk
+<img src="###" alt="" class="impo">
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m1">As for me = an expression used to introduce a new subject/topic.</div>
+<button onclick="rt1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+As for me
+<button class="dic-btn" id="dic-btn1">
+<img src="###" alt="📖" class="dictionary">
+</button>
+<td colspan="2"></td>
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m2">Breathing down someone's neck = constantly checking.</div>
+<button onclick="rt2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Breathing down someone's neck
+<button class="dic-btn" id="dic-btn2">
+<img src="###" alt="📖" class="dictionary">
+</button>
+<td colspan="2"></td>
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m3">Go out into the world = start to be on one's own and independent.</div>
+<button onclick="rt3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Go out into the world
+<button class="dic-btn" id="dic-btn3">
+<img src="###" alt="📖" class="dictionary">
+</button>
+<td colspan="2"></td>
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m4">Have one's mind set on something = be firmly decided.</div>
+<button onclick="rt4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+Have one's mind set on something
+<button class="dic-btn" id="dic-btn4">
+<img src="###" alt="📖" class="dictionary">
+</button>
+<td colspan="2"></td>
+</td>
+</tr>
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m5">You mean = an expression used to confirm what someone else has said.</div>
+<button onclick="rt5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+You mean
+<button class="dic-btn" id="dic-btn5">
+<img src="###" alt="📖" class="dictionary">
+</button>
+<td colspan="2"></td>
+</td>
+</tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer class="footer">
+<p class="d-footer">
+<span class="d-s">¡</span>
+عمل فريق الساحة العلمية التطوعي
+<br>
+<span class="d-date">1444 - 2023</span>
+</p>
+</footer>
+</div>
+<script src="scripts/jquery.js"></script>
+<script>
+let speakers = document.querySelectorAll('.speaker');
+let src4speakers = 'images/speaker3.svg'
+
+for (let i = 0; i < speakers.length; i++) {
+  speakers[i].src = src4speakers;
+}
+
+let dictionaries = document.querySelectorAll('.dictionary');
+let src4dictionaries = 'images/dictionary3.svg'
+
+for (let i = 0; i < dictionaries.length; i++) {
+  dictionaries[i].src = src4dictionaries;
+}
+
+let impos = document.querySelectorAll('.impo');
+let src4impos = 'images/important3.svg'
+
+for (let i = 0; i < impos.length; i++) {
+  impos[i].src = src4impos;
+}
+</script>
+<script src="scripts/voices3.js"></script>
+<script>
+var timeout = setTimeout(function() {
+document.getElementById("loader-div").style.display ="none";
+document.getElementById("content").style.display ="block";
+}, 1500);
+
+$(".loader-div").fadeOut(3000);
+
+function openMenu(){
+document.getElementById("m-img").style.animation ="m-img 0.9s";
+
+document.getElementById("c-img").style.animation ="none";
+
+document.getElementById("menu-box").style.width = "50%";
+  
+var timeout = setTimeout(function(){
+document.getElementById("m-img").style.display ="none";
+}, 900);
+}
+
+function closeMenu() {
+document.getElementById("c-img").style.animation ="c-img 0.7s";
+document.getElementById("m-img").style.animation ="none";
+document.getElementById("menu-box").style.width = "0";
+document.getElementById("m-img").style.display ="block";
+}
+</script>
+<script src="scripts/dic-sup.js"></script>
+</body>
+</html>
