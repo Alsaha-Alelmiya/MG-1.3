@@ -4,7 +4,7 @@ var n1 = new Audio("https://files.soundoftext.com/e9b750a0-470f-11ed-a4bb-5deaa2
 
 var n2 = new Audio("https://files.soundoftext.com/b2aa9fa0-5aaa-11ed-a44a-8501b7b1aefa.mp3");
 
-var n3 = new Audio("https://files.soundoftext.com/67854230-585e-11ed-a44a-8501b7b1aefa.mp3");
+var n3 = new Audio("https://files.soundoftext.com/b8fc4bb0-49d4-11ed-a44a-8501b7b1aefa.mp3");
 
 var n4 = new Audio("https://files.soundoftext.com/6e8a75d0-4843-11ed-a4bb-5deaa2337781.mp3");
 
@@ -32,11 +32,11 @@ var v2 = new Audio("https://files.soundoftext.com/98aea950-4b25-11ed-a44a-8501b7
 
 console.log("Verbs Phrases To Express Regret Go Here!")
 
-var vpter1 = new Audio("https://files.soundoftext.com/bf24f430-bbdd-11ed-a44a-8501b7b1aefa.mp3");
+var vpter1 = new Audio("https://files.soundoftext.com/6ee17f80-be70-11ed-a44a-8501b7b1aefa.mp3");
 
-var vpter1 = new Audio("https://files.soundoftext.com/cdb6f700-bbdd-11ed-a44a-8501b7b1aefa.mp3");
+var vpter2 = new Audio("https://files.soundoftext.com/71cc6a70-be70-11ed-a44a-8501b7b1aefa.mp3");
 
-var vpter1 = new Audio("https://files.soundoftext.com/280d97f0-52d3-11ed-a44a-8501b7b1aefa.mp3");
+var vpter3 = new Audio("https://files.soundoftext.com/8d1bd480-9cad-11ed-a44a-8501b7b1aefa.mp3");
 
 console.log("Adjectives Go Here!")
 
@@ -58,7 +58,7 @@ console.log("Idioms Go Here!")
 
 var idi1 = new Audio("https://files.soundoftext.com/76f86ec0-bbde-11ed-a44a-8501b7b1aefa.mp3");
 
-var idi2 = new Audio("https://files.soundoftext.com/9e4e2a50-bbde-11ed-a44a-8501b7b1aefa.mp3");
+var idi2 = new Audio("https://files.soundoftext.com/060922b0-be70-11ed-a44a-8501b7b1aefa.mp3");
 
 var idi3 = new Audio("https://files.soundoftext.com/b314ebe0-bbde-11ed-a44a-8501b7b1aefa.mp3");
 
@@ -66,10 +66,10 @@ console.log("Real Talk Go Here!")
 
 var rt1 = new Audio("https://files.soundoftext.com/d225f470-bbde-11ed-a44a-8501b7b1aefa.mp3");
 
-var rt2 = new Audio("https://files.soundoftext.com/6afa8ee0-bbdf-11ed-a44a-8501b7b1aefa.mp3");
+var rt2 = new Audio("https://files.soundoftext.com/5c84b910-be70-11ed-a44a-8501b7b1aefa.mp3");
 
 var rt3 = new Audio("https://files.soundoftext.com/92376b40-bbdf-11ed-a44a-8501b7b1aefa.mp3");
 
-var rt4 = new Audio("https://files.soundoftext.com/b0ee45e0-bbdf-11ed-a44a-8501b7b1aefa.mp3");
+var rt4 = new Audio("https://files.soundoftext.com/359168d0-be70-11ed-a44a-8501b7b1aefa.mp3");
 
 var rt5 = new Audio("https://files.soundoftext.com/75318cd0-bc5f-11ed-a44a-8501b7b1aefa.mp3");
