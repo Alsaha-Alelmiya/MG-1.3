@@ -12,9 +12,9 @@ display: inline-block;
 position: relative;
 margin:0 5px 0 0;
 border-radius: 15px;
-color: #F0A33B;
+color: #896A58;
 background: currentColor;
-box-shadow: 50px 10px, -50px 10px, 100px 0px, -100px 0px;
+box-shadow: 50px 10px, -50px 5px, 100px 0px, -100px 0px;
 animation: left 0.7s infinite ease-in-out;
 }
 
