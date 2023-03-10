@@ -63,6 +63,12 @@ height:120px;
 margin-top:0px;
 }
 
+.h-logo.saha{
+width:140px;
+height:140px;
+margin-top:-10px;
+}
+
 /*mix:*/
 img, br, footer{
 pointer-events:none;
@@ -87,12 +93,10 @@ width:250px;
 .index{
 font-family:reem kufi;
 font-size:16px;
-width:70%;
-line-height:30px;
 text-align:center;
 z-index:1;
 color:#896A58;
-padding:35px 20px 0px 0px;
+padding-top:40px;
 text-shadow:1px 1px 3px #f7f7f7, 1px 1px 3px #f7f7f7;
 }
 
@@ -161,7 +165,7 @@ box-shadow:2px 2px 5px black;
 background-color:#896A58;
 color:#f7f7f7;
 width:65%;
-margin:190px 10px;
+margin:180px 10px;
 border-radius:30px 5px 30px 30px;
 box-shadow:2px 2px 5px black;
 line-height:;
@@ -250,7 +254,7 @@ font-family:saha;
 margin-top:25px;
 line-height:50px;
 color:#f7f7f7;
-text-shadow:1px 1px 3px #7A5C51, 1px 1px 3px #7A5C51;
+text-shadow:1px 1px 3px #896A58, 1px 1px 3px #896A58;
 }
 
 .d-s{
@@ -273,7 +277,8 @@ padding:0 3px 0 0;
 </div>
 <div class="content" id="content" style="display:none;">
 <div class="header">
-<img src="https://alsaha-alelmiya.github.io/Hosting-e-ss/الساحة العلمية.png" alt="" class="h-logo" align="left">
+<img src="images/الساحة-العلمية.png" alt="" class="h-logo saha" align="right">
+<img src="images/project-icon.svg" alt="" class="h-logo" align="left">
 <p class="index">
 مفردات وتعبيرات منهج اللغة الإنجليزية، للصف الأول ثانوي، الفصل الدراسي الثالث
 </p>
@@ -299,7 +304,7 @@ padding:0 3px 0 0;
 <img src="images/important.svg" alt="" class="impo-img">
 تنويه!
 <br>
-قد لا يدعم تصميم الصفحات الإلكترونية شاشتك.
+قد لا يدعم تصميم الصفحات الإلكترونية شاشتك؛ لأن مقاسها ليس أكبر من 990 بكسل.
 </div>
 
 <div class="trans-div">
@@ -349,7 +354,8 @@ if (window.matchMedia("(max-width:990px)").matches) {
 var timeout = setTimeout(function() {
 $("#impo-n").toggle('slow');
 div1.style.display = "block";
-}, 7000);
+},
+8000);
 $("#impo-n").toggle('slow');
 div1.style.display = "none";
 }
