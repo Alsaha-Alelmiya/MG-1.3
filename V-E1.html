@@ -42,12 +42,6 @@ margin:0;
 position:relative;
 }
 
-body::after{
-content:'';
-display:block;
-min-height: 8%;
-}
-
 ::selection{
 background-color:rgba(80,80,80,0.5);
 color:white;
@@ -272,13 +266,19 @@ text-align:center;
 }
 
 /*footer:*/
+.break{
+padding-bottom:60px;
+}
+
 .footer{
 width:100%;
+position:absolute;
+bottom:0;
+left:0;
+right:0;
 background-image:url("images/tornado-sun1.svg");
 Background-attachment:fixed;
-position:absolute;
-min-height:8%;
-bottom:0;
+height:8%;
 z-index:-1;
 border-top-left-radius:15%;
 border-top-right-radius:15%;
