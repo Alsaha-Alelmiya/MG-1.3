@@ -20,6 +20,11 @@ src:url("fonts/alsaha-alelmiya.woff2") format("woff2");
 }
 
 @font-face{
+font-family:'icons';
+src:url("fonts/icons.woff2") format("woff2");
+}
+
+@font-face{
 font-family:'science';
 src:url("fonts/science-icons.woff2") format("woff2");
 }
@@ -197,6 +202,37 @@ padding-top:40px;
 text-shadow:1px 1px 3px #f7f7f7, 1px 1px 3px #f7f7f7;
 }
 
+/*icons:*/
+.speaker-icon{
+font-family:icons;
+color:#A47460;
+font-size:16px;
+position:relative;
+top:5px;
+right:6px;
+user-select:none;
+}
+
+.dictionary-icon{
+font-family:icons;
+color:#A47460;
+font-size:14px;
+position:relative;
+top:1px;
+right:3px;
+user-select:none;
+}
+
+.important-icon{
+font-family:icons;
+color:#f7f7f7;
+font-size:14px;
+position:relative;
+top:2px;
+right:-3px;
+user-select:none;
+}
+
 /*header:*/
 .header{
 width:100%;
@@ -212,8 +248,11 @@ width:140px;
 height:140px;
 }
 
-.m-img, .c-img{
-width:55px;
+.m-icon, .c-icon{
+font-size:50px;
+font-family:icons;
+color:#A47460;
+padding:5px;
 animation:;
 z-index:1;
 border-radius:;
@@ -310,12 +349,12 @@ padding:0 3px 0 0;
 }
 
 /*animations:*/
-@keyframes m-img{
+@keyframes m-icon{
 from{transform:rotate(0deg); opacity:1;}
 to{transform:rotate(-90deg); opacity:0;}
 }
 
-@keyframes c-img{
+@keyframes c-icon{
 from{transform:rotate(0deg); opacity:1;}
 to{transform:rotate(-90deg); opacity:0;}
 }
@@ -339,14 +378,14 @@ Unit3 (If It Hadn't Happened) Vocabularies And Expressions
 </span>
 </p>
 <button onclick="openMenu()" class="m-button">
-<img class="m-img" id="m-img" src="images/menu3.svg" alt="Menu">
+<span class="m-icon" id="m-icon">m</span>
 </button>
 </div>
 
 <div class="menu-box" id="menu-box">
 <a href="javascript:void(0)" class="c-link" onclick="closeMenu()" class="m-link">
 <button class="c-button">
-<img src="images/cross3.svg" alt="Close" class="c-img" id="c-img">
+<span class="c-icon" id="c-icon">c</span>
 </button>
 </a>
 <br><br><br><br><br><br>
@@ -383,14 +422,14 @@ Verbs
 ميزة
 </td>
 <td class="items en-i">
-<button onclick="n1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Advantage
 </td>
 <td class="items ar-i">
 يدرب
 </td>
 <td class="items en-i">
-<button onclick="v1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Drill
 </td>
 </tr>
@@ -400,14 +439,14 @@ Drill
 مضاد حيوي
 </td>
 <td class="items en-i">
-<button onclick="n2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Antibiotic
 </td>
 <td class="items ar-i">
 يتوقع
 </td>
 <td class="items en-i">
-<button onclick="v2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Guess
 </td>
 </tr>
@@ -417,7 +456,7 @@ Guess
 شمعة
 </td>
 <td class="items en-i">
-<button onclick="n3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Candle
 </td>
 <td class="s-titles ar-st">
@@ -433,14 +472,14 @@ Verb phrases to express regret
 دورة
 </td>
 <td class="items en-i">
-<button onclick="n4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Course
 </td>
 <td class="items ar-i">
 كان بالإمكان
 </td>
 <td class="items en-i">
-<button onclick="vpter1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="vpter1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Could have
 </td>
 </tr>
@@ -450,14 +489,14 @@ Could have
 عيب
 </td>
 <td class="items en-i">
-<button onclick="n5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Disadvantage
 </td>
 <td class="items ar-i">
-قد يكون له
+قد يكون
 </td>
 <td class="items en-i">
-<button onclick="vpter2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="vpter2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Might have
 </td>
 </tr>
@@ -467,14 +506,14 @@ Might have
 مسافة
 </td>
 <td class="items en-i">
-<button onclick="n6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Distance
 </td>
 <td class="items ar-i">
-أن يكون
+ينبغي أن يكون
 </td>
 <td class="items en-i">
-<button onclick="vpter3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="vpter3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Should have
 </td>
 </tr>
@@ -484,7 +523,7 @@ Should have
 عدوى
 </td>
 <td class="items en-i">
-<button onclick="n7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Infection
 </td>
 <td class="s-titles ar-st">
@@ -500,14 +539,14 @@ Adjectives
 تحميل
 </td>
 <td class="items en-i">
-<button onclick="n8.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Load
 </td>
 <td class="items ar-i">
-تجاري
+دعاية
 </td>
 <td class="items en-i">
-<button onclick="adj1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Commercial
 </td>
 </tr>
@@ -517,14 +556,14 @@ Commercial
 بئر نفط
 </td>
 <td class="items en-i">
-<button onclick="n9.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n9.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Oil well
 </td>
 <td class="items ar-i">
-محرج
+مُدمَّر
 </td>
 <td class="items en-i">
-<button onclick="adj2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Devastated
 </td>
 </tr>
@@ -534,14 +573,14 @@ Devastated
 بنسلين
 </td>
 <td class="items en-i">
-<button onclick="n10.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n10.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Penicillin
 </td>
 <td class="items ar-i">
-غير محرج
+مُحرَج
 </td>
 <td class="items en-i">
-<button onclick="adj3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Embarrassed
 </td>
 </tr>
@@ -551,14 +590,14 @@ Embarrassed
 ندم
 </td>
 <td class="items en-i">
-<button onclick="n11.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n11.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Regret
 </td>
 <td class="items ar-i">
 ثقيل
 </td>
 <td class="items en-i">
-<button onclick="adj4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Heavy
 </td>
 </tr>
@@ -568,14 +607,14 @@ Heavy
 مصدر
 </td>
 <td class="items en-i">
-<button onclick="n12.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n12.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Source
 </td>
 <td class="items ar-i">
-ناضج
+غير ناضج
 </td>
 <td class="items en-i">
-<button onclick="adj5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Immature
 </td>
 </tr>
@@ -588,7 +627,7 @@ Immature
 وهاج
 </td>
 <td class="items en-i">
-<button onclick="adj6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Incandescent
 </td>
 </tr>
@@ -604,17 +643,17 @@ Idioms
 منتشر
 </td>
 <td class="items en-i">
-<button onclick="adj7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Widespread
 </td>
 </tr>
 
 <tr>
 <td class="items ar-i">
-أن تكون على
+الحصول على علاقة جيدة
 </td>
 <td class="items en-i">
-<button onclick="idi1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="idi1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Be on good terms
 </td>
 <td colspan="2"></td>
@@ -622,10 +661,10 @@ Be on good terms
 
 <tr>
 <td class="items ar-i">
-علاقة جيدة مع شخص
+الجدال مع شخص ما، والتوقف عن مصاحبته
 </td>
 <td class="items en-i">
-<button onclick="idi2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="idi2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Fall out with someone
 </td>
 <td colspan="2"></td>
@@ -637,7 +676,7 @@ Fall out with someone
 تفوت فرصة
 </td>
 <td class="items en-i">
-<button onclick="idi3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="idi3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Miss an opportunity
 </td>
 <td colspan="2"></td>
@@ -645,12 +684,12 @@ Miss an opportunity
 
 <tr>
 <td class="s-titles ar-st">
-<img src="###" alt="" class="impo">
+<span class="important-icon">i</span>
 حديث جاد
 </td>
 <td class="s-titles en-st">
+<span class="important-icon" style="right:3px;">i</span>
 Real talk
-<img src="###" alt="" class="impo">
 </td>
 <td colspan="2"></td>
 </tr>
@@ -661,10 +700,10 @@ Real talk
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m1">As for me = an expression used to introduce a new subject/topic.</div>
-<button onclick="rt1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 As for me
 <button class="dic-btn" id="dic-btn1">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -672,14 +711,14 @@ As for me
 
 <tr>
 <td class="items ar-i">
-فأنا أتنفس على عنق شخص ما
+متابعة شخص ما عن كثب
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m2">Breathing down someone's neck = constantly checking.</div>
-<button onclick="rt2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Breathing down someone's neck
 <button class="dic-btn" id="dic-btn2">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -691,10 +730,10 @@ Breathing down someone's neck
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m3">Go out into the world = start to be on one's own and independent.</div>
-<button onclick="rt3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Go out into the world
 <button class="dic-btn" id="dic-btn3">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -702,14 +741,14 @@ Go out into the world
 
 <tr>
 <td class="items ar-i">
-اخرج للعالم
+مصمم على الحصول على شيء ما
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m4">Have one's mind set on something = be firmly decided.</div>
-<button onclick="rt4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Have one's mind set on something
 <button class="dic-btn" id="dic-btn4">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -720,10 +759,10 @@ Have one's mind set on something
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m5">You mean = an expression used to confirm what someone else has said.</div>
-<button onclick="rt5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 You mean
 <button class="dic-btn" id="dic-btn5">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 <td colspan="2"></td>
 </td>
@@ -772,22 +811,22 @@ document.getElementById("content").style.display ="block";
 $(".loader-div").fadeOut(3000);
 
 function openMenu(){
-document.getElementById("m-img").style.animation ="m-img 0.9s";
+document.getElementById("m-icon").style.animation ="m-icon 0.9s";
 
-document.getElementById("c-img").style.animation ="none";
+document.getElementById("c-icon").style.animation ="none";
 
 document.getElementById("menu-box").style.width = "50%";
   
 var timeout = setTimeout(function(){
-document.getElementById("m-img").style.display ="none";
+document.getElementById("m-icon").style.display ="none";
 }, 900);
 }
 
 function closeMenu() {
-document.getElementById("c-img").style.animation ="c-img 0.7s";
-document.getElementById("m-img").style.animation ="none";
+document.getElementById("c-icon").style.animation ="c-icon 0.7s";
+document.getElementById("m-icon").style.animation ="none";
 document.getElementById("menu-box").style.width = "0";
-document.getElementById("m-img").style.display ="block";
+document.getElementById("m-icon").style.display ="block";
 }
 </script>
 <script src="scripts/dic-sup.js"></script>

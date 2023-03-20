@@ -20,6 +20,11 @@ src:url("fonts/alsaha-alelmiya.woff2") format("woff2");
 }
 
 @font-face{
+font-family:'icons';
+src:url("fonts/icons.woff2") format("woff2");
+}
+
+@font-face{
 font-family:'science';
 src:url("fonts/science-icons.woff2") format("woff2");
 }
@@ -197,6 +202,37 @@ padding-top:40px;
 text-shadow:1px 1px 3px #f7f7f7, 1px 1px 3px #f7f7f7;
 }
 
+/*icons:*/
+.speaker-icon{
+font-family:icons;
+color:#7A5C51;
+font-size:16px;
+position:relative;
+top:5px;
+right:6px;
+user-select:none;
+}
+
+.dictionary-icon{
+font-family:icons;
+color:#7A5C51;
+font-size:14px;
+position:relative;
+top:2px;
+right:3px;
+user-select:none;
+}
+
+.important-icon{
+font-family:icons;
+color:#f7f7f7;
+font-size:14px;
+position:relative;
+top:1px;
+right:-3px;
+user-select:none;
+}
+
 /*header:*/
 .header{
 width:100%;
@@ -212,8 +248,11 @@ width:140px;
 height:140px;
 }
 
-.m-img, .c-img{
-width:55px;
+.m-icon, .c-icon{
+font-size:50px;
+font-family:icons;
+color:#7A5C51;
+padding:5px;
 animation:;
 z-index:1;
 border-radius:;
@@ -221,6 +260,7 @@ position:absolute;
 top:0;
 right:0;
 }
+
 
 .m-button, .c-button{
 background-color:transparent;
@@ -309,12 +349,12 @@ padding:0 3px 0 0;
 }
 
 /*animations:*/
-@keyframes m-img{
+@keyframes m-icon{
 from{transform:rotate(0deg); opacity:1;}
 to{transform:rotate(-90deg); opacity:0;}
 }
 
-@keyframes c-img{
+@keyframes c-icon{
 from{transform:rotate(0deg); opacity:1;}
 to{transform:rotate(-90deg); opacity:0;}
 }
@@ -338,14 +378,14 @@ Unit4 (What they said) Vocabularies And Expressions
 </span>
 </p>
 <button onclick="openMenu()" class="m-button">
-<img class="m-img" id="m-img" src="images/menu4.svg" alt="Menu">
+<span class="m-icon" id="m-icon">m</span>
 </button>
 </div>
 
 <div class="menu-box" id="menu-box">
 <a href="javascript:void(0)" class="c-link" onclick="closeMenu()" class="m-link">
 <button class="c-button">
-<img src="images/cross4.svg" alt="Close" class="c-img" id="c-img">
+<span class="c-icon" id="c-icon">c</span>
 </button>
 </a>
 <br><br><br><br><br><br>
@@ -382,14 +422,14 @@ Verbs
 
 </td>
 <td class="items en-i">
-<button onclick="n1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Blood pressure
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Bother
 </td>
 </tr>
@@ -399,14 +439,14 @@ Bother
 
 </td>
 <td class="items en-i">
-<button onclick="n2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Candidate
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Complain
 </td>
 </tr>
@@ -416,14 +456,14 @@ Complain
 
 </td>
 <td class="items en-i">
-<button onclick="n3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Nuisance
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Deteriorate
 </td>
 </tr>
@@ -433,14 +473,14 @@ Deteriorate
 
 </td>
 <td class="items en-i">
-<button onclick="n4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Politician
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Improve
 </td>
 </tr>
@@ -450,14 +490,14 @@ Improve
 
 </td>
 <td class="items en-i">
-<button onclick="n5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Power
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Interrupt
 </td>
 </tr>
@@ -467,14 +507,14 @@ Interrupt
 
 </td>
 <td class="items en-i">
-<button onclick="n6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Proof
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Knock down
 </td>
 </tr>
@@ -484,14 +524,14 @@ Knock down
 
 </td>
 <td class="items en-i">
-<button onclick="n7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Pumpkin seed
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Lower
 </td>
 </tr>
@@ -501,14 +541,14 @@ Lower
 
 </td>
 <td class="items en-i">
-<button onclick="n8.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Result
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v8.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Persuade
 </td>
 </tr>
@@ -518,14 +558,14 @@ Persuade
 
 </td>
 <td class="items en-i">
-<button onclick="n9.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n9.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Sports complex
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v9.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v9.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Raise
 </td>
 </tr>
@@ -535,14 +575,14 @@ Raise
 
 </td>
 <td class="items en-i">
-<button onclick="n10.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n10.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Tax
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v10.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v10.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Reschedule
 </td>
 </tr>
@@ -552,14 +592,14 @@ Reschedule
 
 </td>
 <td class="items en-i">
-<button onclick="n11.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n11.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Telemarketing
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v11.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v11.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Scan
 </td>
 </tr>
@@ -584,14 +624,14 @@ Adverb
 
 </td>
 <td class="items en-i">
-<button onclick="adj1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Annoyed
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="adv1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adv1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Elsewhere
 </td>
 </tr>
@@ -601,7 +641,7 @@ Elsewhere
 
 </td>
 <td class="items en-i">
-<button onclick="adj2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Healthy
 </td>
 <th colspan="2" class="m-titles">
@@ -614,16 +654,16 @@ Healthy
 
 </td>
 <td class="items en-i">
-<button onclick="adj3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Powerful
 </td>
 <td class="s-titles ar-st">
-<img src="###" alt="" class="impo">
+<span class="important-icon">i</span>
 حديث جاد
 </td>
 <td class="s-titles en-st">
+<span class="important-icon" style="right:3px;">i</span>
 Real talk
-<img src="###" alt="" class="impo">
 </td>
 </tr>
 
@@ -632,7 +672,7 @@ Real talk
 
 </td>
 <td class="items en-i">
-<button onclick="adj4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Pushy
 </td>
 <td class="items ar-i">
@@ -640,10 +680,10 @@ Pushy
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m1">Hoax = a plan that is designed to trick someone else.</div>
-<button onclick="rt1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Hoax
 <button class="dic-btn" id="dic-btn1">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 </tr>
@@ -655,10 +695,10 @@ Hoax
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m2">In the end = used to introduce a statement with the final event or result.</div>
-<button onclick="rt2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 In the end
 <button class="dic-btn" id="dic-btn2">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 </tr>
@@ -670,10 +710,10 @@ In the end
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m3">Or anything like that = used so that the speaker doesn’t have to give a complete list or explain things in more detail.</div>
-<button onclick="rt3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Or anything like that
 <button class="dic-btn" id="dic-btn3">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 </tr>
@@ -685,10 +725,10 @@ Or anything like that
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m4">Really = used to make a statement stronger.</div>
-<button onclick="rt4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Really
 <button class="dic-btn" id="dic-btn4">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 </tr>
@@ -700,10 +740,10 @@ Really
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m5">Totally = used to make a statement stronger.</div>
-<button onclick="rt5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Totally
 <button class="dic-btn" id="dic-btn5">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 </tr>
@@ -751,22 +791,22 @@ document.getElementById("content").style.display ="block";
 $(".loader-div").fadeOut(3000);
 
 function openMenu(){
-document.getElementById("m-img").style.animation ="m-img 0.9s";
+document.getElementById("m-icon").style.animation ="m-icon 0.9s";
 
-document.getElementById("c-img").style.animation ="none";
+document.getElementById("c-icon").style.animation ="none";
 
 document.getElementById("menu-box").style.width = "50%";
   
 var timeout = setTimeout(function(){
-document.getElementById("m-img").style.display ="none";
+document.getElementById("m-icon").style.display ="none";
 }, 900);
 }
 
 function closeMenu() {
-document.getElementById("c-img").style.animation ="c-img 0.7s";
-document.getElementById("m-img").style.animation ="none";
+document.getElementById("c-icon").style.animation ="c-icon 0.7s";
+document.getElementById("m-icon").style.animation ="none";
 document.getElementById("menu-box").style.width = "0";
-document.getElementById("m-img").style.display ="block";
+document.getElementById("m-icon").style.display ="block";
 }
 </script>
 <script src="scripts/dic-sup.js"></script>

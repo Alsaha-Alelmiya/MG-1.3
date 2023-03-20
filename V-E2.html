@@ -20,6 +20,11 @@ src:url("fonts/alsaha-alelmiya.woff2") format("woff2");
 }
 
 @font-face{
+font-family:'icons';
+src:url("fonts/icons.woff2") format("woff2");
+}
+
+@font-face{
 font-family:'science';
 src:url("fonts/science-icons.woff2") format("woff2");
 }
@@ -197,6 +202,38 @@ padding-top:40px;
 text-shadow:1px 1px 3px #f7f7f7, 1px 1px 3px #f7f7f7;
 }
 
+
+/*icons:*/
+.speaker-icon{
+font-family:icons;
+color:#A48F72;
+font-size:16px;
+position:relative;
+top:5px;
+right:6px;
+user-select:none;
+}
+
+.dictionary-icon{
+font-family:icons;
+color:#A48F72;
+font-size:14px;
+position:relative;
+top:1px;
+right:3px;
+user-select:none;
+}
+
+.important-icon{
+font-family:icons;
+color:#f7f7f7;
+font-size:14px;
+position:relative;
+top:2px;
+right:-3px;
+user-select:none;
+}
+
 /*header:*/
 .header{
 width:100%;
@@ -212,8 +249,11 @@ width:140px;
 height:140px;
 }
 
-.m-img, .c-img{
-width:55px;
+.m-icon, .c-icon{
+font-size:50px;
+font-family:icons;
+color:#A48F72;
+padding:5px;
 animation:;
 z-index:1;
 border-radius:;
@@ -221,6 +261,7 @@ position:absolute;
 top:0;
 right:0;
 }
+
 
 .m-button, .c-button{
 background-color:transparent;
@@ -309,12 +350,12 @@ padding:0 3px 0 0;
 }
 
 /*animations:*/
-@keyframes m-img{
+@keyframes m-icon{
 from{transform:rotate(0deg); opacity:1;}
 to{transform:rotate(-90deg); opacity:0;}
 }
 
-@keyframes c-img{
+@keyframes c-icon{
 from{transform:rotate(0deg); opacity:1;}
 to{transform:rotate(-90deg); opacity:0;}
 }
@@ -337,14 +378,14 @@ Unit2 (I Wonder What Happened) Vocabularies And Expressions
 </span>
 </p>
 <button onclick="openMenu()" class="m-button">
-<img class="m-img" id="m-img" src="images/menu2.svg" alt="Menu">
+<span class="m-icon" id="m-icon">m</span>
 </button>
 </div>
 
 <div class="menu-box" id="menu-box">
 <a href="javascript:void(0)" class="c-link" onclick="closeMenu()" class="m-link">
 <button class="c-button">
-<img src="images/cross2.svg" alt="Close" class="c-img" id="c-img">
+<span class="c-icon" id="c-icon">c</span>
 </button>
 </a>
 <br><br><br><br><br><br>
@@ -381,14 +422,14 @@ Verbs
 
 </td>
 <td class="items en-i">
-<button onclick="n1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Bull
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Crash
 </td>
 </tr>
@@ -398,14 +439,14 @@ Crash
 
 </td>
 <td class="items en-i">
-<button onclick="n2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Crater
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Explode
 </td>
 </tr>
@@ -415,14 +456,14 @@ Explode
 
 </td>
 <td class="items en-i">
-<button onclick="n3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Debris
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Gather
 </td>
 </tr>
@@ -432,14 +473,14 @@ Gather
 
 </td>
 <td class="items en-i">
-<button onclick="n4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Device
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Lose control
 </td>
 </tr>
@@ -449,14 +490,14 @@ Lose control
 
 </td>
 <td class="items en-i">
-<button onclick="n5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Fireball
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Penetrate
 </td>
 </tr>
@@ -466,14 +507,14 @@ Penetrate
 
 </td>
 <td class="items en-i">
-<button onclick="n6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Fragment
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Smash
 </td>
 </tr>
@@ -483,14 +524,14 @@ Smash
 
 </td>
 <td class="items en-i">
-<button onclick="n7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Hurricane
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Stick around
 </td>
 </tr>
@@ -500,14 +541,14 @@ Stick around
 
 </td>
 <td class="items en-i">
-<button onclick="n8.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Locomotive
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="v8.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="v8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Tease
 </td>
 </tr>
@@ -517,7 +558,7 @@ Tease
 
 </td>
 <td class="items en-i">
-<button onclick="n9.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n9.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Meteorite
 </td>
 <td class="s-titles ar-st">
@@ -533,14 +574,14 @@ Adjectives
 
 </td>
 <td class="items en-i">
-<button onclick="n10.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n10.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Orbit
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="adj1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Sophisticated
 </td>
 </tr>
@@ -550,14 +591,14 @@ Sophisticated
 
 </td>
 <td class="items en-i">
-<button onclick="n11.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n11.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Pioneer
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="adj2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="adj2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Weird
 </td>
 </tr>
@@ -567,7 +608,7 @@ Weird
 
 </td>
 <td class="items en-i">
-<button onclick="n12.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n12.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Remote control
 </td>
 <th colspan="2" class="m-titles">
@@ -580,7 +621,7 @@ Remote control
 
 </td>
 <td class="items en-i">
-<button onclick="n13.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n13.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Time bomb
 </td>
 <td class="s-titles ar-st">
@@ -596,14 +637,14 @@ Idiom
 
 </td>
 <td class="items en-i">
-<button onclick="n14.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n14.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Tornado
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
-<button onclick="idi1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="idi1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Channel surf
 </td>
 </tr>
@@ -613,37 +654,37 @@ Channel surf
 
 </td>
 <td class="items en-i">
-<button onclick="n15.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="n15.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Volcano
 </td>
 <td class="s-titles ar-st">
-<img src="###" alt="" class="impo">
+<span class="important-icon">i</span>
 حديث جاد
 </td>
 <td class="s-titles en-st">
+<span class="important-icon" style="right:3px;">i</span>
 Real talk
-<img src="###" alt="" class="impo">
 </td>
 </tr>
 
 <tr>
 <td class="s-titles ar-st">
-<img src="###" alt="" class="impo">
+<span class="important-icon">i</span>
 بعد القراءة
 </td>
 <td class="s-titles en-st">
+<span class="important-icon" style="right:3px;">i</span>
 After Reading
-<img src="###" alt="" class="impo">
 </td>
 <td class="items ar-i">
 
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m1">Beats me = I have no idea.</div>
-<button onclick="rt1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Beats me
 <button class="dic-btn" id="dic-btn1">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 
@@ -651,14 +692,14 @@ Beats me
 
 <tr>
 <td class="items ar-i">
-
+جودة أو مهارة أو شخص مفيد وقيِّم
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m5">Asset = a useful or valuable quality, skill or person.</div>
-<button onclick="af1.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="af1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Asset
 <button class="dic-btn" id="dic-btn5">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td class="items ar-i">
@@ -666,24 +707,24 @@ Asset
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m2">Excuse me = a way to start a conversation with a stranger.</div>
-<button onclick="rt2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Excuse me
 <button class="dic-btn" id="dic-btn2">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 </tr>
 
 <tr>
 <td class="items ar-i">
-
+دائمًا نشط ومتطور ومتغير
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m6">Dynamic = always active, changing, developing.</div>
-<button onclick="af2.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="af2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Dynamic
 <button class="dic-btn" id="dic-btn6">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td class="items ar-i">
@@ -691,24 +732,24 @@ Dynamic
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m3">Gee = an exclamation to express surprise.</div>
-<button onclick="rt3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Gee
 <button class="dic-btn" id="dic-btn3">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 </tr>
 
 <tr>
 <td class="items ar-i">
-
+منظمة تجارية
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m7">Enterprise = a business organization.</div>
-<button onclick="af3.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="af3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Enterprise
 <button class="dic-btn" id="dic-btn7">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td class="items ar-i">
@@ -716,24 +757,24 @@ Enterprise
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m4">You never know = anything is possible.</div>
-<button onclick="rt4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="rt4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 You never know
 <button class="dic-btn" id="dic-btn4">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 </tr>
 
 <tr>
 <td class="items ar-i">
-
+بعيدًا
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m8">Remote = far away.</div>
-<button onclick="af4.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="af4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Remote
 <button class="dic-btn" id="dic-btn8">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -741,14 +782,14 @@ Remote
 
 <tr>
 <td class="items ar-i">
-
+من أول تعلق بالبلد
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m9">Rural = of or relating to the country.</div>
-<button onclick="af5.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="af5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Rural
 <button class="dic-btn" id="dic-btn9">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -756,14 +797,14 @@ Rural
 
 <tr>
 <td class="items ar-i">
-
+أبسط وأكثر فعالية وإنتاجية
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m10">Streamlined = made simpler, more effective and productive.</div>
-<button onclick="af6.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="af6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Streamlined
 <button class="dic-btn" id="dic-btn10">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -771,14 +812,14 @@ Streamlined
 
 <tr>
 <td class="items ar-i">
-
+دائم، لا يدمر المواد الطبيعية
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m11">Sustainable = lasting, not destroying natural resources.</div>
-<button onclick="af7.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="af7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Sustainable
 <button class="dic-btn" id="dic-btn11">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -786,14 +827,14 @@ Sustainable
 
 <tr>
 <td class="items ar-i">
-
+استبدالها بأحدث وأفضل الاجراءات والمعدات، إلخ...
 </td>
 <td class="items en-i">
 <div class="dic-m" id="dic-m12">Upgraded = replaced by newer, better procedures, equipment, etc.</div>
-<button onclick="af8.play()" class="speaker-btn"><img src="###" alt="🔊" class="speaker"></button>
+<button onclick="af8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
 Upgraded
 <button class="dic-btn" id="dic-btn12">
-<img src="###" alt="📖" class="dictionary">
+<span class="speaker-icon">D</span>
 </button>
 </td>
 <td colspan="2"></td>
@@ -842,22 +883,22 @@ document.getElementById("content").style.display ="block";
 $(".loader-div").fadeOut(3000);
 
 function openMenu(){
-document.getElementById("m-img").style.animation ="m-img 0.9s";
+document.getElementById("m-icon").style.animation ="m-icon 0.9s";
 
-document.getElementById("c-img").style.animation ="none";
+document.getElementById("c-icon").style.animation ="none";
 
 document.getElementById("menu-box").style.width = "50%";
   
 var timeout = setTimeout(function(){
-document.getElementById("m-img").style.display ="none";
+document.getElementById("m-icon").style.display ="none";
 }, 900);
 }
 
 function closeMenu() {
-document.getElementById("c-img").style.animation ="c-img 0.7s";
-document.getElementById("m-img").style.animation ="none";
+document.getElementById("c-icon").style.animation ="c-icon 0.7s";
+document.getElementById("m-icon").style.animation ="none";
 document.getElementById("menu-box").style.width = "0";
-document.getElementById("m-img").style.display ="block";
+document.getElementById("m-icon").style.display ="block";
 }
 </script>
 <script src="scripts/dic-sup.js"></script>
