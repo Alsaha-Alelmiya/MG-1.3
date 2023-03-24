@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar/en" style="scroll-behavior:smooth;">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=0.65"/>
+<link rel="icon" href="../images/project-icon.svg">
+<link rel="stylesheet" href="https://alsaha-alelmiya.github.io/MG-1.3/hosting/loader-img.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=IBM+Plex+Sans+Arabic:wght@500&family=Katibeh&family=Markazi+Text&family=Reem+Kufi&display=swap" rel="stylesheet">
+<title>مفردات وتعبيرات الوحدة الثانية</title> 
+<style>
+
+/*font-families:*/
+@font-face{
+font-family:'saha';
+src:url("../fonts/alsaha-alelmiya.woff2") format("woff2");
+}
+
+@font-face{
+font-family:'icons';
+src:url("../fonts/icons.woff2") format("woff2");
+}
+
+@font-face{
+font-family:'science';
+src:url("../fonts/science-icons.woff2") format("woff2");
+}
+
+/*font-family: 'Amiri', serif;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-family: 'Katibeh', cursive;
+font-family: 'Markazi Text', serif;
+font-family: 'Reem Kufi', sans-serif;*/
+
+*{
+text-align:center;
+margin:0;
+padding:0;
+}
+
+body{
+min-height:100vh;
+margin:0;
+position:relative;
+}
+
+body::after{
+content:'';
+display:block;
+min-height: 10%;
+}
+
+::selection{
+background-color:rgba(80,80,80,0.5);
+color:white;
+text-shadow:1px 1px 3px black;
+}
+
+/*th:*/
+.m-titles{
+background-color:rgb(134, 113, 84);
+color:#f7f7f7;
+font-family:ibm plex sans arabic;
+font-weight:500;
+border-top:5px solid white;
+}
+
+/*td:*/
+.s-titles{
+background-color:#A48F72;
+color:#f7f7f7;
+font-family:markazi text;
+font-size:18px;
+border-top:5px solid white;
+}
+
+.ar-st{
+border-right:5px solid white;
+}
+
+.en-st{
+border-left:5px solid white;
+}
+
+.items{
+font-family:Katibeh;
+background-color:#f7f7f7;
+color:#A48F72;
+}
+
+.ar-i{
+border-right:5px solid white;
+}
+
+.en-i{
+border-left:5px solid white;
+}
+
+/*mix:*/
+
+table, th, td{
+border-collapse:collapse;
+padding:10px;
+}
+
+img, footer, br{
+user-select:none;
+}
+
+/*table:*/
+table{
+margin:auto;
+border:9px double white;
+width:100%;
+}
+
+/*button:*/
+.speaker-btn, .dic-btn{
+border-radius:50%;
+border:none;
+background-color:transparent;
+padding:1px 2px 5px 10px;
+}
+
+/*div:*/
+.dic-m{
+direction:ltr;
+background-color:#A48F72;
+color:#f7f7f7;
+border-radius:10px 10px 10px 2px;
+padding:10px 5px 5px 5px;
+margin-bottom:4px;
+display:none;
+opacity:0.9;
+}
+
+.content{
+display:none;
+}
+
+/*loader:*/
+.loader-div{
+display:;
+background-color:white;
+width:100%;
+height:50%;
+margin:75% auto;
+text-align:center;
+}
+
+.loader-logo{
+width:250px;
+}
+
+/*img:*/
+img{
+pointer-events:none;
+user-select:none;
+}
+
+.speaker{
+width:18px;
+position:relative;
+top:6px;
+right:5px;
+}
+
+.dictionary{
+padding:1px;
+width:14px;
+position:relative;
+top:3.5px;
+}
+
+.impo{
+width:15px;
+}
+
+/*links:*/
+.bus{
+-webkit-tap-highlight-color:transparent;
+text-decoration:underline;
+color:#A48F72;
+}
+
+.bus:hover{
+text-decoration:none;
+color:#A48F72;
+}
+
+/*p:*/
+.index{
+font-family:reem kufi;
+font-size:18px;
+text-align:center;
+z-index:1;
+color:#A48F72;
+padding-top:40px;
+text-shadow:1px 1px 3px #f7f7f7, 1px 1px 3px #f7f7f7;
+}
+
+
+/*icons:*/
+.speaker-icon{
+font-family:icons;
+color:#A48F72;
+font-size:16px;
+position:relative;
+top:5px;
+right:6px;
+user-select:none;
+}
+
+.dictionary-icon{
+font-family:icons;
+color:#A48F72;
+font-size:14px;
+position:relative;
+top:1px;
+right:3px;
+user-select:none;
+}
+
+.important-icon{
+font-family:icons;
+color:#f7f7f7;
+font-size:14px;
+position:relative;
+top:2px;
+right:-3px;
+user-select:none;
+}
+
+/*header:*/
+.header{
+width:100%;
+height:140px;
+background-image:url("../images/sun-tornado2.svg");
+background-attachment:fixed;
+border-bottom-left-radius:15%;
+border-bottom-right-radius:15%;
+}
+
+.h-logo{
+width:140px;
+height:140px;
+}
+
+.m-icon, .c-icon{
+font-size:50px;
+font-family:icons;
+color:#A48F72;
+padding:5px;
+animation:;
+z-index:1;
+border-radius:;
+position:absolute;
+top:0;
+right:0;
+}
+
+
+.m-button, .c-button{
+background-color:transparent;
+border-color:transparent;
+position:absolute;
+right:0;
+top:0;
+width:55px;
+height:55px;
+}
+
+.menu-box{
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-image:linear-gradient(124deg, #A48F72, #f7f7f7, #f7f7f7);
+Background-attachment:fixed;
+overflow-x: hidden;
+transition: 0.8s;
+padding-top: 0px;
+box-shadow:-2px 4px 12px black;
+text-align:center;
+font-size:8px;
+opacity:0.9;
+}
+
+.m-link{
+display:grid;
+margin:auto;
+grid-template-columns:1fr;
+margin-top:100px;
+font-size:20px;
+font-family:reem kufi;
+background-color:transparent;
+border:none;
+text-decoration:underline;
+color:#A48F72;
+text-shadow:1px 1px 5px #f7f7f7;
+}
+
+.menu-box, .c-link{
+position:absolute;
+top:0px;
+right:0px;
+text-align:center;
+}
+
+/*footer:*/
+.break{
+padding-bottom:250px;
+}
+
+.footer{
+width:100%;
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background-image:url("../images/tornado-sun2.svg");
+Background-attachment:fixed;
+height:10%;
+z-index:-1;
+border-top-left-radius:15%;
+border-top-right-radius:15%;
+}
+.d-footer{
+font-size:28px;
+font-family:saha;
+margin-top:38px;
+line-height:50px;
+color:#f7f7f7;
+text-shadow:1px 1px 3px #A48F72, 1px 1px 3px #A48F72;
+}
+
+.d-s{
+font-family:science;
+font-size:44px;
+transform:;
+display:inline-block;
+position:relative;
+top:5px;
+padding:0 3px 0 0;
+}
+
+/*animations:*/
+@keyframes m-icon{
+from{transform:rotate(0deg); opacity:1;}
+to{transform:rotate(-90deg); opacity:0;}
+}
+
+@keyframes c-icon{
+from{transform:rotate(0deg); opacity:1;}
+to{transform:rotate(-90deg); opacity:0;}
+}
+</style>
+</head>
+<body>
+<div class="loader-div" id="loader-div">
+<img src="../images/project-icon.svg" alt="" class="loader-logo" align="center">
+<br><br>
+<span class="loader-img"></span>
+</div>
+<div class="content" id="content">
+<div class="header">
+<img src="../images/الساحة-العلمية.png" alt="" class="h-logo" align="left">
+<p class="index">
+مفردات وتعبيرات الوحدة الثانية (أتساءل عما حدث)
+<br>
+<span dir="ltr">
+Unit2 (I Wonder What Happened) Vocabularies And Expressions
+</span>
+</p>
+<button onclick="openMenu()" class="m-button">
+<span class="m-icon" id="m-icon">m</span>
+</button>
+</div>
+
+<div class="menu-box" id="menu-box">
+<a href="javascript:void(0)" class="c-link" onclick="closeMenu()" class="m-link">
+<button class="c-button">
+<span class="c-icon" id="c-icon">c</span>
+</button>
+</a>
+<br><br><br><br><br><br>
+<button class="m-link" onclick="document.location.href='v-e.html'">الرئيسية</button>
+<button class="m-link" onclick="document.location.href='v-e1.html'">مفردات وتعبيرات الوحدة الأولى</button>
+<button class="m-link" onclick="document.location.href='v-e3.html'">مفردات وتعبيرات الوحدة الثالثة</button>
+<button class="m-link" onclick="document.location.href='v-e4.html'">مفردات وتعبيرات الوحدة الرابعة</button>
+</div>
+<br><br>
+<table class="container">
+<tr>
+<th colspan="4" class="m-titles">
+المفردات [Vocabularies]
+</th>
+</tr>
+
+<tr>
+<td class="s-titles ar-st">
+أسماء
+</td>
+<td class="s-titles en-st">
+Nouns
+</td>
+<td class="s-titles ar-st">
+أفعال
+</td>
+<td class="s-titles en-st">
+Verbs
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Bull
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Crash
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Crater
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Explode
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Debris
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Gather
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Device
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Lose control
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Fireball
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Penetrate
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Fragment
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Smash
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Hurricane
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Stick around
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Locomotive
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="v8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Tease
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n9.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Meteorite
+</td>
+<td class="s-titles ar-st">
+صفات
+</td>
+<td class="s-titles en-st">
+Adjectives
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n10.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Orbit
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Sophisticated
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n11.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Pioneer
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="adj2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Weird
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n12.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Remote control
+</td>
+<th colspan="2" class="m-titles">
+التعبيرات [Expressions]
+</th>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n13.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Time bomb
+</td>
+<td class="s-titles ar-st">
+مصطلح
+</td>
+<td class="s-titles en-st">
+Idiom
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n14.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Tornado
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="idi1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Channel surf
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<button onclick="n15.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Volcano
+</td>
+<td class="s-titles ar-st">
+<span class="important-icon">i</span>
+حديث جاد
+</td>
+<td class="s-titles en-st">
+<span class="important-icon" style="right:3px;">i</span>
+Real talk
+</td>
+</tr>
+
+<tr>
+<td class="s-titles ar-st">
+<span class="important-icon">i</span>
+بعد القراءة
+</td>
+<td class="s-titles en-st">
+<span class="important-icon" style="right:3px;">i</span>
+After Reading
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m1">Beats me = I have no idea.</div>
+<button onclick="rt1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Beats me
+<button class="dic-btn" id="dic-btn1">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m5">Asset = a useful or valuable quality, skill or person.</div>
+<button onclick="af1.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Asset
+<button class="dic-btn" id="dic-btn5">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m2">Excuse me = a way to start a conversation with a stranger.</div>
+<button onclick="rt2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Excuse me
+<button class="dic-btn" id="dic-btn2">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m6">Dynamic = always active, changing, developing.</div>
+<button onclick="af2.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Dynamic
+<button class="dic-btn" id="dic-btn6">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m3">Gee = an exclamation to express surprise.</div>
+<button onclick="rt3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Gee
+<button class="dic-btn" id="dic-btn3">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m7">Enterprise = a business organization.</div>
+<button onclick="af3.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Enterprise
+<button class="dic-btn" id="dic-btn7">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m4">You never know = anything is possible.</div>
+<button onclick="rt4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+You never know
+<button class="dic-btn" id="dic-btn4">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m8">Remote = far away.</div>
+<button onclick="af4.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Remote
+<button class="dic-btn" id="dic-btn8">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m9">Rural = of or relating to the country.</div>
+<button onclick="af5.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Rural
+<button class="dic-btn" id="dic-btn9">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m10">Streamlined = made simpler, more effective and productive.</div>
+<button onclick="af6.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Streamlined
+<button class="dic-btn" id="dic-btn10">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m11">Sustainable = lasting, not destroying natural resources.</div>
+<button onclick="af7.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Sustainable
+<button class="dic-btn" id="dic-btn11">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="items ar-i">
+
+</td>
+<td class="items en-i">
+<div class="dic-m" id="dic-m12">Upgraded = replaced by newer, better procedures, equipment, etc.</div>
+<button onclick="af8.play()" class="speaker-btn"><span class="speaker-icon">S</span></button>
+Upgraded
+<button class="dic-btn" id="dic-btn12">
+<span class="speaker-icon">D</span>
+</button>
+</td>
+<td colspan="2"></td>
+</tr>
+</table>
+<div class="break"></div>
+<footer class="footer">
+<p class="d-footer">
+<span class="d-s">¡</span>
+عمل فريق الساحة العلمية التطوعي
+<br>
+<span class="d-date">1444 - 2023</span>
+</p>
+</footer>
+</div>
+<script src="../scripts/jquery.js"></script>
+<script>
+var timeout = setTimeout(function() {
+alert("جميع ما في هذه الصفحة من عمل عبدالله فائز الشهري، عدا بعض ملفات التصميم فليس هو من صممها، ولكنه عدل عليها.");
+}, 2500);
+</script>
+<script>
+var timeout = setTimeout(function() {
+document.getElementById("loader-div").style.display ="none";
+document.getElementById("content").style.display ="block";
+}, 1500);
+
+$(".loader-div").fadeOut(3000);
+
+function openMenu(){
+document.getElementById("m-icon").style.animation ="m-icon 0.9s";
+
+document.getElementById("c-icon").style.animation ="none";
+
+document.getElementById("menu-box").style.width = "50%";
+  
+var timeout = setTimeout(function(){
+document.getElementById("m-icon").style.display ="none";
+}, 900);
+}
+
+function closeMenu() {
+document.getElementById("c-icon").style.animation ="c-icon 0.7s";
+document.getElementById("m-icon").style.animation ="none";
+document.getElementById("menu-box").style.width = "0";
+document.getElementById("m-icon").style.display ="block";
+}
+</script>
+<script src="../scripts/dic-sup.js"></script>
+</body>
+</html>
