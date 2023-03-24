@@ -67,3 +67,21 @@ var rt2 = new Audio("https://files.soundoftext.com/10a24650-4f7d-11ed-a44a-8501b
 var rt3 = new Audio("https://files.soundoftext.com/93eb18e0-bb96-11ed-a44a-8501b7b1aefa.mp3");
 
 var rt4 = new Audio("https://files.soundoftext.com/b508e160-bb96-11ed-a44a-8501b7b1aefa.mp3");
+
+console.log("After Reading Go Here! ");
+
+var af1 = new Audio("https://files.soundoftext.com/2e3bd7b0-585d-11ed-a44a-8501b7b1aefa.mp3");
+
+var af2 = new Audio("https://files.soundoftext.com/cbcf0bd0-90a9-11ed-a44a-8501b7b1aefa.mp3");
+
+var af3 = new Audio("https://files.soundoftext.com/e35eb5a0-c323-11ed-a44a-8501b7b1aefa.mp3");
+
+var af4 = new Audio("https://files.soundoftext.com/3b755d50-7844-11ed-a44a-8501b7b1aefa.mp3");
+
+var af5 = new Audio("https://files.soundoftext.com/068a39b0-4c9a-11ed-a44a-8501b7b1aefa.mp3");
+
+var af6 = new Audio("https://files.soundoftext.com/3ecb2ad0-ca50-11ed-a44a-8501b7b1aefa.mp3");
+
+var af7 = new Audio("https://files.soundoftext.com/d2b013b0-5b41-11ed-a44a-8501b7b1aefa.mp3");
+
+var af8 = new Audio("https://files.soundoftext.com/94db0e50-9fe3-11ed-a44a-8501b7b1aefa.mp3");
